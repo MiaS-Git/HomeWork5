@@ -1,0 +1,17 @@
+#include <stdio.h>
+int arr[2][4] = {
+    {10, 11, 12, 13},
+    {14, 15, 16, 17}
+};
+int main(void) {
+  int i, j;
+     for(i=0; i<2; i++) {
+      for(j=0;j<4;j++) {
+         printf("[%d]", arr[i][j]);
+        if(j==3){
+          printf("\n");
+        }
+      }
+     }
+  return 0;
+}

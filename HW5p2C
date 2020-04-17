@@ -1,0 +1,28 @@
+#include <stdio.h>
+enum monster { Taotie, Jingwei, Xiangliu, Jinnalaluo, Nuckelavee,Quetzalcoatl= 24};
+
+int main(void) {
+  enum monster myMonster;
+   printf("Original: %d\n", myMonster);
+  myMonster=2;
+  int y =myMonster;
+  printf("First: %d\n", y);
+   myMonster = 8;
+  printf("Second: %d\n", myMonster);
+ printf("Third: %d\n", myMonster/2);
+ int x = 10;
+   myMonster = x;
+    printf("Fourth: %d\n", myMonster);
+    printf("Fifth: %d\n", myMonster-1);
+    printf("Sixth: %d\n", Nuckelavee*3);
+  enum monster hisMonster;
+  hisMonster = hisMonster+2;
+  myMonster = hisMonster;
+   printf("Seventh: %d\n", myMonster);
+   printf("Seventh: %d\n", myMonster==hisMonster); //1 true 0 false
+   printf("Eighth: %d\n", Xiangliu!=hisMonster);//1 true 0 false
+   printf("Ninth: %d\n", 38%Jinnalaluo);
+   float w = 4.5/myMonster;
+   printf("Tenth: %f\n", w);   
+  return 0;
+}
